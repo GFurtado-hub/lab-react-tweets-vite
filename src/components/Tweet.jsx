@@ -1,5 +1,5 @@
-
-import UserProfileImage from './ProfileImage';
+import React from 'react';
+import ProfileImage from './ProfileImage';
 import UserInfo from './User';
 import TimeStamp from './TimeStamp';
 import Message from './Message';
@@ -9,7 +9,7 @@ function Tweet({ tweet }) {
   return (
     <div className="tweet">
       {/* Display user profile image */}
-      <UserProfileImage image={tweet.user.image} name={tweet.user.name} />
+      <ProfileImage image={tweet.user.image} name={tweet.user.name} />
 
       <div className="body">
         <div className="top">
